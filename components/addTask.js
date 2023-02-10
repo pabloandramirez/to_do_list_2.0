@@ -77,12 +77,8 @@ export const createTask = ({value, dateFormat, complete, id}) => {
         taskContent.appendChild(check);
         taskContent.appendChild(titleTask);
 
-    //crea un span para la fecha en el cual agrega el formato de la misma
-    const dateElement = document.createElement("span");
-        dateElement.innerHTML = dateFormat;
         //agrega a la lista el contenido de la tarea con el icono de completado, la fecha con su formato y el icono de eliminar
         task.appendChild(taskContent);
-        task.appendChild(dateElement);
         task.appendChild(deleteIcon(id));
 
     //retorna la lista con todo el contenido agregado
